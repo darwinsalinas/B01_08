@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Battler - Target #8</title>
+    <style>
+      :root {
+        --celeste: #6592cf;
+        --azul: #060f55;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--celeste);
+      }
+      .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .contenedor {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+      .punta {
+        background: var(--azul);
+        width: 20px;
+        height: 80px;
+        border-radius: 10px;
+      }
+      .celeste {
+        background: var(--celeste);
+        z-index: 4;
+        height: 110px;
+        margin-bottom: -100px;
+      }
+      .cuerpo {
+        background: var(--azul);
+        width: 140px;
+        height: 140px;
+        margin-top: -20px;
+        border-radius: 0 0 110% 110%;
+        z-index: 2;
+      }
+      .mango {
+        background: var(--azul);
+        width: 20px;
+        height: 52px;
+        margin-top: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="contenedor">
+        <div style="display: flex;">
+          <div class="punta"></div>
+          <div class="punta celeste"></div>
+          <div class="punta"></div>
+          <div class="punta celeste"></div>
+          <div class="punta"></div>
+          <div class="punta celeste"></div>
+          <div class="punta"></div>
+        </div>
+        <div class="cuerpo"></div>
+        <div class="mango"></div>
+      </div>
+    </div>
+  </body>
+</html>
